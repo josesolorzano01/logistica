@@ -1,0 +1,35 @@
+{
+    "nombre_modelo": "K-means + SVM para riesgo actuarial",
+    "tipo_modelo": "Clustering no supervisado + clasificación supervisada didáctica",
+    "n_clusters": 3,
+    "silhouette_score": 0.2,
+    "variables_numericas": [
+        "age",
+        "bmi",
+        "children",
+        "charges"
+    ],
+    "variables_categoricas": [
+        "sex",
+        "smoker",
+        "region"
+    ],
+    "mapa_riesgo": {
+        "2": "Bajo",
+        "1": "Medio",
+        "0": "Alto"
+    },
+    "svm_kernels": [
+        "linear",
+        "poly",
+        "rbf",
+        "sigmoid"
+    ],
+    "archivos_generados": [
+        "/content/models/kmeans_riesgo_actuarial.pkl",
+        "/content/models/svm_riesgo_actuarial.pkl",
+        "/content/models/model_metadata.json",
+        "/content/outputs/insurance_con_clusters.csv",
+        "/content/outputs/svm_resultados_kernels.csv"
+    ]
+}
