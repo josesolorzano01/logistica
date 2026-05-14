@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 
 
 st.set_page_config(page_title="Riesgo actuarial", layout="centered")
-st.title("Predicción de riesgo actuarial")
+st.title("Predicción de riesgo actuarial _ Jose Edilberto Martinez")
 
 
 @st.cache_resource
@@ -127,7 +127,7 @@ if enviar:
 
     # ── Regresión Logística: resultado binario y probabilidad ────────────────
     st.divider()
-    st.subheader("Regresión Logística — Riesgo Alto")
+    st.subheader("Regresión Logística — Riesgo Actuarial")
 
     # Transformar cliente al espacio PCA
     X_cli_prep = modelo.named_steps["preprocessor"].transform(cliente)
@@ -140,10 +140,10 @@ if enviar:
     col_a, col_b = st.columns(2)
     col_a.metric(
         label="Resultado binario",
-        value="1 — Riesgo Alto" if lr_pred == 1 else "0 — Sin riesgo alto",
+        value="1 — Riesgo Alto" if lr_pred == 1 else "0 ",
     )
     col_b.metric(
-        label="Probabilidad de riesgo alto",
+        label="Probabilidad de riesgo",
         value=f"{lr_proba:.1%}",
     )
 
