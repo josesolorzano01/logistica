@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 
 
 st.set_page_config(page_title="Riesgo actuarial", layout="centered")
-st.title("Predicción de riesgo actuarial _ Jose Edilberto Martinez")
+st.title("Predicción de riesgo actuarial-Jose Edilberto Martinez Solorzano-PCAF-03")
 
 
 @st.cache_resource
